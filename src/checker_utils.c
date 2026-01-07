@@ -6,11 +6,14 @@
 /*   By: toruinoue <toruinoue@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 21:25:55 by torinoue          #+#    #+#             */
-/*   Updated: 2026/01/08 03:43:23 by toruinoue        ###   ########.fr       */
+/*   Updated: 2026/01/08 03:46:39 by toruinoue        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+static int	compare_instruction(const char *line, const char *instr);
+static char	*add_char_to_str(char *str, char c, int len);
 
 static int	compare_instruction(const char *line, const char *instr)
 {

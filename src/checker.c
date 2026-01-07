@@ -6,11 +6,14 @@
 /*   By: toruinoue <toruinoue@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 21:03:45 by torinoue          #+#    #+#             */
-/*   Updated: 2026/01/08 03:43:23 by toruinoue        ###   ########.fr       */
+/*   Updated: 2026/01/08 03:46:28 by toruinoue        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+static int	read_line_char(char **line, t_stack **a, t_stack **b);
+static int	handle_error(t_stack **a, t_stack **b);
 
 static int	read_line_char(char **line, t_stack **a, t_stack **b)
 {
