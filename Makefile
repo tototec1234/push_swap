@@ -93,6 +93,10 @@ $(OBJ_DIR):
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $^ $(LIB)  -o $@	
 
+$(OBJ_DIR)/bonus/%.o: $(BONUS_DIR)/%.c $(INC_DIR)/push_swap_bonus.h $(INC_DIR)/push_swap.h
+	@mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
+
 $(OBJ_DIR)/%.o: %.c $(INC_DIR)/push_swap.h
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@

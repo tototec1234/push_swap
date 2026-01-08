@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "push_swap_bonus.h"
 
 static int	read_line_char(char **line, t_stack_bonus **a, t_stack_bonus **b);
 static int	handle_error(t_stack_bonus **a, t_stack_bonus **b);

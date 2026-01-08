@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "push_swap_bonus.h"
 
 void	pa_bonus(t_stack_bonus **a, t_stack_bonus **b)
 {

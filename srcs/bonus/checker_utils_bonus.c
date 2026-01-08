@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "push_swap_bonus.h"
 
 static int	compare_instruction(const char *line, const char *instr);
 static char	*add_char_to_str(char *str, char c, int len);
