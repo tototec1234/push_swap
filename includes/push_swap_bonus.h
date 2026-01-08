@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap_bonus.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: toruinoue <toruinoue@student.42.fr>        +#+  +:+       +#+        */
+/*   By: torinoue <torinoue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 18:10:00 by torinoue          #+#    #+#             */
-/*   Updated: 2026/01/08 18:10:00 by toruinoue        ###   ########.fr       */
+/*   Updated: 2026/01/08 20:37:50 by torinoue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,4 +66,3 @@ int				process_line(char *line, t_stack_bonus **a, t_stack_bonus **b);
 int				read_instructions_bonus(t_stack_bonus **a, t_stack_bonus **b);
 
 #endif
-
