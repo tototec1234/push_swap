@@ -6,7 +6,7 @@
 #    By: toruinoue <toruinoue@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/01 21:34:56 by torinoue          #+#    #+#              #
-#    Updated: 2026/01/08 17:32:14 by toruinoue        ###   ########.fr        #
+#    Updated: 2026/01/08 20:56:34 by toruinoue        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,7 +85,11 @@ vpath %.c $(SRC_DIR)
 all: $(LIBFT) $(OBJ_DIR) $(NAME)
 
 $(LIBFT):
-	@make $(MAKECMDGOALS) -C $(LIBFT_DIR);
+	@if [ "$(MAKECMDGOALS)" = "bonus" ]; then \
+		make all -C $(LIBFT_DIR); \
+	else \
+		make $(MAKECMDGOALS) -C $(LIBFT_DIR); \
+	fi
 
 $(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
